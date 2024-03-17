@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "layouts": {
+    "LAYOUT_ID": {
+      "name": "Layout Name",
+      "content": {
+        // بداية الجانب الأيسر
+        "left": {
+          "inner": [
+            {
+              "type": "joystick",
+              "expand": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick",
+                "deadzone": {
+                  "threshold": 0.05,
+                  "radial": true
+                }
+              }
+            }
+          ],
+          // بداية الجانب الخارجي لليسار
+          "outer": [
+            { // بداية زر التحكم في السكين 
+              "type": "joystick",
+              "axis": [
+                {
+                  "input": "axisXY",
+                  "output": "rightJoystick"
+                }
+              ],
+              "action": "leftBumper",
+              "style": {
+                "default": {
+                  "knob": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "leftBumper"
+                    },
+                    "stroke": {
+                      "opacity": 0.1
+                    }
+                  }
+                }
+              }
+            }, // نهاية زر التحكم في السكين 
+            { // بداية زر التحكم في السلاح
+            "type": "joystick",
+            "axis":[
+            {
+            "input": "axisXY",
+            "output": "rightJoystick"
+            }
+            ],
+            "action": "leftTrigger",
+            "style": {
+            "default": {
+            "knob": {
+            "faceImage": {
+            "type": "icon",
+            "value": "leftTrigger"
+            }
+            }
+            }
+            },
+            "stroke": {
+            "opacity": 0.1
+            }
+            }, // نهاية زر التحكم في السلاح
+          ] // نهاية الجانب الخارجي لليسار
+        } // نهاية الجانب الأيسر
+      }
+    }
+  }
+}
