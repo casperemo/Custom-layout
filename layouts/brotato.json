@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "layouts": {
+    "one-handed-left": {
+      "name": "One-handed (Left)",
+      "content": {
+        "layers": {
+          "ToggleDpad": {
+            "left": {
+              "outer": [
+                null,
+                null,
+                [
+                  {
+                    "type": "directionalPad",
+                    "scale": 1.5,
+                    "interaction": {
+                      "activationType": "exclusive"
+                    },
+                    "styles": {
+                      "default": {
+                        "gradient": {
+                          "color": "#ffffff80"
+                        }
+                      },
+                      "idle": {
+                        "opacity": 0.6
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "left": {
+          "inner": [
+            {
+              "type": "joystick",
+              "relative": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick"
+              }
+            }
+          ],
+          "outer": [
+            null,
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "styles": {
+                "idle": {
+                  "opacity": 0.7
+                }
+              }
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "type": "button",
+              "action": "gamepadB",
+              "styles": {
+                "idle": {
+                  "opacity": 0.7
+                }
+              }
+            },
+            {
+              "type": "button",
+              "action": "leftBumper",
+              "styles": {
+                "idle": {
+                  "opacity": 0.7
+                }
+              }
+            }
+          ]
+        },
+        "upper": {
+          "right": [
+            {
+              "type": "button",
+              "action": "menu"
+            },
+            {
+              "type": "button",
+              "toggle": true,
+              "action": {
+                "type": "layer",
+                "target": "ToggleDpad"
+              },
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "dPad"
+                  }
+                },
+                "toggled": {
+                  "background": {
+                    "type": "color",
+                    "value": "#ffffff10"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "one-handed-right": {
+      "name": "One-handed (Right)",
+      "content": {
+        "layers": {
+          "ToggleDpad": {
+            "right": {
+              "outer": [
+                null,
+                null,
+                null,
+                null,
+                [
+                  {
+                    "type": "directionalPad",
+                    "scale": 1.5,
+                    "interaction": {
+                      "activationType": "exclusive"
+                    },
+                    "styles": {
+                      "default": {
+                        "gradient": {
+                          "color": "#ffffff80"
+                        }
+                      },
+                      "idle": {
+                        "opacity": 0.6
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        },
+        "right": {
+          "inner": [
+            {
+              "type": "joystick",
+              "relative": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick"
+              }
+            }
+          ],
+          "outer": [
+            {
+              "type": "button",
+              "action": "leftBumper",
+              "styles": {
+                "idle": {
+                  "opacity": 0.7
+                }
+              }
+            },
+            {
+              "type": "button",
+              "action": "gamepadB",
+              "styles": {
+                "idle": {
+                  "opacity": 0.7
+                }
+              }
+            },
+            null,
+            null,
+            null,
+            null,
+            {
+              "type": "button",
+              "action": "gamepadA",
+              "styles": {
+                "idle": {
+                  "opacity": 0.7
+                }
+              }
+            }
+          ]
+        },
+        "upper": {
+          "right": [
+            {
+              "type": "button",
+              "action": "menu"
+            },
+            {
+              "type": "button",
+              "toggle": true,
+              "action": {
+                "type": "layer",
+                "target": "ToggleDpad"
+              },
+              "styles": {
+                "default": {
+                  "faceImage": {
+                    "type": "icon",
+                    "value": "dPad"
+                  }
+                },
+                "toggled": {
+                  "background": {
+                    "type": "color",
+                    "value": "#ffffff10"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "simplified": {
+      "name": "Simplified",
+      "content": {
+        "left": {
+          "inner": [
+            {
+              "type": "joystick",
+              "relative": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick"
+              }
+            }
+          ]
+        },
+        "right": {
+          "inner": [
+            {
+              "type": "button",
+              "action": "gamepadA"
+            }
+          ],
+          "outer": [
+            {
+              "type": "blank"
+            },
+            {
+              "type": "button",
+              "action": "gamepadB"
+            }
+          ]
+        },
+        "upper": {
+          "right": [
+            {
+              "type": "button",
+              "action": "menu"
+            },
+            {
+              "type": "button",
+              "action": "rightBumper"
+            }
+          ]
+        }
+      }
+    },
+    "simplified-full": {
+      "name": "Simplified (2 joysticks)",
+      "content": {
+        "left": {
+          "inner": [
+            {
+              "type": "joystick",
+              "relative": false,
+              "axis": {
+                "input": "axisXY",
+                "output": "leftJoystick"
+              }
+            }
+          ]
+        },
+        "right": {
+          "inner": [
+            {
+              "type": "button",
+              "action": "gamepadA"
+            }
+          ],
+          "outer": [
+            {
+              "type": "blank"
+            },
+            {
+              "type": "button",
+              "action": "gamepadB"
+            },
+            null,
+            {
+              "type": "blank"
+            },
+            [
+              {
+                "type": "joystick",
+                "axis": {
+                  "input": "axisXY",
+                  "output": "rightJoystick"
+                },
+                "styles": {
+                  "idle": {
+                    "knob": {
+                      "opacity": 0.7
+                    }
+                  }
+                }
+              }
+            ]
+          ]
+        },
+        "upper": {
+          "right": [
+            {
+              "type": "button",
+              "action": "menu"
+            },
+            {
+              "type": "button",
+              "action": "rightBumper"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
