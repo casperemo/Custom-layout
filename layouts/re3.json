@@ -2,7 +2,7 @@
   "schema_version": 1,
   "layouts": {
     "LAYOUT_ID": {
-      "name": "Layout Name",
+      "name": "type-b",
       "content": {
         "left": {
           "inner": [
