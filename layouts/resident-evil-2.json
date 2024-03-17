@@ -65,7 +65,9 @@
               "stroke": {
                 "opacity": 0.1
               }
-            }
+            },
+            null,
+            null,
           ]
         },
         "right": {
