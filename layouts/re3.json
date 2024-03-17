@@ -44,31 +44,92 @@
               }
             },
             {
-            "type": "joystick",
-            "axis":[
+              "type": "joystick",
+              "axis": [
+                {
+                  "input": "axisXY",
+                  "output": "rightJoystick"
+                }
+              ],
+              "action": "leftTrigger",
+              "style": {
+                "default": {
+                  "knob": {
+                    "faceImage": {
+                      "type": "icon",
+                      "value": "leftTrigger"
+                    }
+                  }
+                }
+              },
+              "stroke": {
+                "opacity": 0.1
+              }
+            }
+          ]
+        },
+        "right": {
+          "inner": [
             {
-            "input": "axisXY",
-            "output": "rightJoystick"
-            }
-            ],
-            "action": "leftTrigger",
-            "style": {
-            "default": {
-            "knob": {
-            "faceImage": {
-            "type": "icon",
-            "value": "leftTrigger"
-            }
-            }
-            }
+              "type": "button",
+              "action": "gamepadY"
             },
-            "stroke": {
-            "opacity": 0.1
+            {
+              "type": "button",
+              "action": "gamepadB"
+            },
+            {
+              "type": "button",
+              "action": "gamepadA"
+            },
+            {
+              "type": "button",
+              "action": "gamepadX"
             }
-            }, 
-          ] 
-        } 
+          ],
+          "outer": [
+            {
+              "type": "button",
+              "action": "rightBumper"
+            },
+            {
+              "type": "button",
+              "action": "rightTrigger"
+            },
+            null,
+            {
+              "type": "button",
+              "action": "rightThumb"
+            },
+            [
+              {
+                "type": "joystick",
+                "axis": {
+                  "input": "axisXY",
+                  "output": "rightJoystick",
+                  "deadzone": {
+                    "threshold": 0.05,
+                    "radial": true
+                  }
+                }
+              }
+            ]
+          ]
+        },
+        "upper": {
+          "right": [
+            {
+              "type": "button",
+              "action": "menu"
+            },
+            {
+              "type": "button",
+              "action": "view"
+            }
+          ]
+        }
       }
     }
   }
-}
+                  }
+                  
