@@ -1,0 +1,7 @@
+{
+  "name": "Forza Horizon 4",
+  "default_layout": "layout-1",
+  "layouts": [
+    "forza"
+  ]
+}

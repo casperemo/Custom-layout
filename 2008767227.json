@@ -1,0 +1,7 @@
+{
+  "name": "Brotato",
+  "default_layout": "one-handed-left",
+  "layouts": [
+    "brotato"
+  ]
+}

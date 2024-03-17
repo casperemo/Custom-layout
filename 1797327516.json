@@ -1,0 +1,7 @@
+{
+  "name": "Palworld",
+  "default_layout": "custom",
+  "layouts": [
+    "palworld"
+  ]
+}
